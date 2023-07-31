@@ -1,0 +1,146 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Muli:wght@100;300;400;500;700&display=swap');
+
+  *{
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color: steelblue;
+    background-color: rgba(49, 83, 254);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    color: white;
+   position: relative;
+  }
+
+  .container {
+    /* background-color: rgba(31, 28, 28, 0.4); */
+    background-color: rgb(42, 42, 46);
+    padding: 20px 30px;
+    border-radius: 5px;
+    /* border: 2px solid red; */
+  }
+
+   .container h1{
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgba(49, 83, 254);
+
+  } 
+
+  .login-header-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .container a{
+    text-decoration: none;
+    /* color: lightblue; */
+    color: rgba(49, 83, 254);
+  }
+  .btn-container{
+margin: 20px 15px 40px;
+  }
+  .btn{
+    cursor:pointer;
+    display: inline-block;
+    width: 100%;
+    /* background: lightblue; */
+    background-color: rgba(49, 83, 254);
+    padding: 15px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+
+    -ms-transform: skewX(-20deg);
+  -webkit-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+  }
+
+  .btn:focus{
+    outline: 0;
+  }
+
+  .btn:active{
+    transform: scale(0.98);
+  }
+
+  .text{
+    margin-top: 30px;
+  }
+  .form-control{
+    position: relative;
+    margin: 20px 15px 40px;
+    /* border: 3px solid red; */
+    width: 400px;
+
+  }
+
+  .form-control input{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid white;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+color: white;
+  }
+
+  .form-control input:focus,
+  .form-control input:valid{
+outline: 0;
+/* border-bottom-color: lightblue; */
+border-bottom-color: rgba(49, 83, 254);
+  }
+
+.form-control label{
+    position: absolute;
+    top: 15px;
+    left: 0;
+    font-weight: bold;
+    
+}
+
+.fa-regular, .fa-solid{
+  position: absolute;
+  top: 15px;
+  right: 1rem;
+  
+}
+.form-control label span{
+  display: inline-block;
+  font-size: 18px;
+  
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+}
+
+
+.form-control input:focus + label span,
+.form-control input:valid + label span{
+/* color: lightblue; */
+color: rgba(49, 83, 254);
+transform: translateY(-30px);
+}
+
+
+.m{
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
